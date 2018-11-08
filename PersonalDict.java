@@ -1,21 +1,23 @@
 
 /*
- * ­Ó¤H¤Æ­^º~¦r¨å
- * ¸ê®Æ¡G
- * 1. Design Pattern ³]­p¼Ò¦¡
- * 2. algorithm ºtºâªk
- * 3. GitHub ¶}·½µ{¦¡½X¤À¨É°Ï
- * 4. ELK µøÄ±¤Æ§e²{¤é»x¤ÀªR
- * 5. Gossip ¶}·½®Ø¬[
- * 6. Spring ¸ê®Æ®wªº¶}·½®Ø¬[
- * 7. Hibernate ¸ê®Æ®wªº¶}·½®Ø¬[
- * 8. solaris unix§@·~¨t²Î¤§¤@
+ * å€‹äººåŒ–è‹±æ¼¢å­—å…¸
+ * è³‡æ–™ï¼š
+ * 1. Design Pattern è¨­è¨ˆæ¨¡å¼
+ * 2. algorithm æ¼”ç®—æ³•
+ * 3. GitHub é–‹æºç¨‹å¼ç¢¼åˆ†äº«å€
+ * 4. ELK è¦–è¦ºåŒ–å‘ˆç¾æ—¥èªŒåˆ†æ
+ * 5. Gossip é–‹æºæ¡†æ¶
+ * 6. Spring è³‡æ–™åº«çš„é–‹æºæ¡†æ¶
+ * 7. Hibernate è³‡æ–™åº«çš„é–‹æºæ¡†æ¶
+ * 8. solaris unixä½œæ¥­ç³»çµ±ä¹‹ä¸€
  * 
- * ¥\¯à¡G¿é¤J­^¤å¬d¸ß¤¤¤å
+ * åŠŸèƒ½ï¼šè¼¸å…¥è‹±æ–‡æŸ¥è©¢ä¸­æ–‡
  *
  *2018/11/07
- *­ì¥»±Ndata¤@¨Ö¼g¦bmain¸Ì¡A©î¶}¨ì¨â­ÓÃş§O¤§«á«o¥d¦í¤F
- *¥Øªº¡G±NDataÃş§O¸Ìªº¶°¦Xª«¥ó¶Ç¨ìPersonalDictÃş§O¨Ï¥Î
+ *åŸæœ¬å°‡dataä¸€ä½µå¯«åœ¨mainè£¡ï¼Œæ‹†é–‹åˆ°å…©å€‹é¡åˆ¥ä¹‹å¾Œå»å¡ä½äº†
+ *ç›®çš„ï¼šå°‡Dataé¡åˆ¥è£¡çš„é›†åˆç‰©ä»¶å‚³åˆ°PersonalDicté¡åˆ¥ä½¿ç”¨
+ *2018/11/08
+ *å°‡adddata()å›å‚³å€¼å‹æ…‹æ”¹ç‚ºTreeMapï¼Œå¯ä»¥å‹•äº†
  *
  *
  */
@@ -28,20 +30,18 @@ public class PersonalDict {
 	public static void main(String args[]) throws IOException {
 		
 		Datan data = new Data();
-		TreeMap<String,String> tr = new TreeMap<String,String>(data.adddata());	//¥¢±Ñ
+		TreeMap<String,String> tr = new TreeMap<String,String>(data.adddata());	
 		
-		System.out.println("===¤uµ{®v­^º~¦r¨å===");
-		System.out.println("((Â÷¶}½Ğ¿é¤Jq))");
+		System.out.println("===å·¥ç¨‹å¸«è‹±æ¼¢å­—å…¸===");
+		System.out.println("((é›¢é–‹è«‹è¼¸å…¥q))");
 		String str;
 		do {
-			System.out.println("½Ğ¿é¤J­n¬d¸ßªº­^¤å³æ¦r:");
+			System.out.println("è«‹è¼¸å…¥è¦æŸ¥è©¢çš„è‹±æ–‡å–®å­—:");
 			BufferedReader bfr = new BufferedReader(new InputStreamReader(System.in));
 			str = bfr.readLine();
 			if (!str.equals("q")) {
-				System.out.println(data.adddata());//´ú¸Õ¡G¶¶§Q§âª«¥ó¶Ç¦^¨Ó¡A¦ı¦ü¥G¥¢¥h¶°¦Xª«¥óªº¯S©Ê
 				
-				String answer = (TreeMap)cdata.adddata()___.get(str.toLowerCase()); //¥d¦í
-
+				String answer = tr.get(str.toLowerCase());
 				System.out.println(answer);
 			}
 		} while (!str.equals("q"));
@@ -54,12 +54,12 @@ public class PersonalDict {
 	
 	String enginneren[] = { "design Pattern", "algorithm", "github",
 			"elk", "gossip", "spring", "hibernate","solaris" };
-	String enginnercn[] = { "³]­p¼Ò¦¡", "ºtºâªk", "¶}·½µ{¦¡½X¤À¨É°Ï", 
-			"µøÄ±¤Æ§e²{¤é»x¤ÀªR", "¶}·½®Ø¬[", "¸ê®Æ®wªº¶}·½®Ø¬[", "¸ê®Æ®wªº¶}·½®Ø¬[", "unix§@·~¨t²Î¤§¤@" };
+	String enginnercn[] = { "è¨­è¨ˆæ¨¡å¼", "æ¼”ç®—æ³•", "é–‹æºç¨‹å¼ç¢¼åˆ†äº«å€", 
+			"è¦–è¦ºåŒ–å‘ˆç¾æ—¥èªŒåˆ†æ", "é–‹æºæ¡†æ¶", "è³‡æ–™åº«çš„é–‹æºæ¡†æ¶", "è³‡æ–™åº«çš„é–‹æºæ¡†æ¶", "unixä½œæ¥­ç³»çµ±ä¹‹ä¸€" };
 
 	
 	
-	public  Object adddata() {
+	public  TreeMap adddata() {
 		TreeMap<String, String> tmap = new TreeMap<String, String>();
 		for(int i = 0;i<enginneren.length;i++)
 		{
